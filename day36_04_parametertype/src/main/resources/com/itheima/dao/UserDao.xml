@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+    <select id="findById" parameterType="int" resultType="User">
+        select * from t_user where uid=#{id}
+    </select>
+    
+    <select id="findByUsernameAndAddress" resultType="User">
+        select * from t_user where username=#{uname} and address=#{addr}
+    </select>
+
+    <insert id="addUser" parameterType="User">
+        insert into t_user(username,sex,birthday,address) values (#{username},#{sex},#{birthday},#{address})
+    </insert>
+
+    <update id="updateUser" parameterType="map">
+        update t_user set username=#{username},sex=#{sex} where uid=#{uid}
+    </update>
+    
+    <select id="searchByCondition" parameterType="QueryVo" resultType="User">
+        select * from t_user where sex=#{queryCondition.sex} and address=#{queryCondition.address}
+        limit #{offset},#{pageSize}
+    </select>
+</mapper>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+    <!--
+        resultType只有select标签才有
+
+        我们需要在标签体的SQL语句中，获取pojo类型的参数的属性: #{属性名}
+
+
+        selectKey标签: 查询主键
+            keyColumn 表示要查询的列名
+            keyProperty 表示要赋值的属性名
+            resultType 表示查询出来的结果的类型
+            order 表示在前或者在后执行
+        select last_insert_id() 查询最后一个自增长的id的值
+    -->
+    <insert id="addUser" parameterType="User">
+        <selectKey resultType="int" order="AFTER" keyProperty="uid" keyColumn="uid">
+            select last_insert_id()
+        </selectKey>
+        insert into t_user (username,sex,birthday,address) values (#{username},#{sex},#{birthday},#{address})
+    </insert>
+
+    <!--
+        我们需要在标签体的SQL语句中，获取简单类型的参数,我们使用#{任意字符串}
+    -->
+    <delete id="deleteById" parameterType="int">
+        delete from t_user where uid=#{id}
+    </delete>
+    
+    
+    <update id="updateUser" parameterType="User">
+        update t_user set username=#{username},sex=#{sex},address=#{address} where uid=#{uid}
+    </update>
+
+    <select id="findById" parameterType="int" resultType="User">
+        select * from t_user where uid=#{id}
+    </select>
+
+    <!--
+        模糊查询
+        另外一种在SQL语句中引用方法的参数的方式：${}
+            1. 引用pojo中的属性: '${属性名}'
+            2. 引用简单类型的参数: '${value}'，但是高版本的mybatis中可以'${任意字符串}'
+    -->
+    <select id="searchByUsername" parameterType="string" resultType="User">
+        <!--select * from t_user where username like "%"#{username}"%"-->
+        <!--select * from t_user where username like concat("%",#{username},"%")-->
+
+        select * from t_user where username like '%${value}%'
+    </select>
+</mapper>

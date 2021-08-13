@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--
+    根标签是configuration
+-->
+<configuration>
+    <!--
+        使用properties标签引入外部的properties文件
+        目的: 也是为了配置文件解耦，专门的信息就放到专门的配置文件中
+    -->
+    <properties resource="jdbc.properties"></properties>
+
+    <!--
+        使用typeAliases标签定义类的别名,这里面可以定义多个别名
+            typeAlias就表示定义一个别名,type属性表示要定义别名的那个类的全限定名，alias表示别名
+
+            因为所有要配置别名的类基本上都写在一个包中，所以我们可以使用包扫描配置别名package
+            通过package标签扫描整个包，就能给该包中的所有类都配置别名，别名就是该类的类名(不区分大小写)
+    -->
+    <typeAliases>
+        <!--<typeAlias type="com.itheima.pojo.User" alias="u"></typeAlias>-->
+        <package name="com.itheima.pojo"/>
+    </typeAliases>
+    <!--
+        配置数据库的环境信息:
+        environments: 表示里面可以配置多个环境,default表示使用哪个环境
+            environment: 每一个environment表示一种环境
+        为什么要配置多个环境: 因为我们有多个环境(开发环境、生产环境(真正项目之后运行的环境)、测试环境)
+    -->
+    <environments default="dev">
+        <!--开发环境-->
+        <environment id="dev">
+            <!--
+                事务管理者，type为JDBC表示使用JDBC的事务管理者(了解)
+            -->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--
+                dataSource表示数据源，1. POOLED表示使用自带连接池  2. UNPOOLED表示不使用连接池  3. JNDI表示使用JNDI的连接池
+            -->
+            <dataSource type="POOLED">
+                <!--连接池的配置信息-->
+                <!--
+                    使用jdbc.properties中的数据 ${key}
+                -->
+                <property name="username" value="${jdbc.user}"/>
+                <property name="password" value="${jdbc.password}"/>
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+            </dataSource>
+        </environment>
+        <!--生产环境-->
+        <environment id="pro">
+            <transactionManager type=""></transactionManager>
+            <dataSource type=""></dataSource>
+        </environment>
+        <!--测试环境-->
+        <environment id="test">
+            <transactionManager type=""></transactionManager>
+            <dataSource type=""></dataSource>
+        </environment>
+    </environments>
+
+    <!--
+        指定加载哪些映射配置文件: mappers
+            mapper标签: 每一个mapper标签负责加载一个映射配置文件;resource指定要加载的映射配置文件的路径
+
+            package标签: 使用包扫描的方式加载包中的所有映射配置文件
+    -->
+    <mappers>
+        <!--<mapper resource="com/itheima/dao/UserDao.xml"></mapper>-->
+
+        <package name="com.itheima.dao"/>
+    </mappers>
+</configuration>

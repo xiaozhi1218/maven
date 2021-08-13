@@ -8,6 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/day35_javaweb_01/day35_javaweb_01.iml" filepath="$PROJECT_DIR$/day35_javaweb_01/day35_javaweb_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/day35_javaweb_02/day35_javaweb_02/day35_javaweb_02.iml" filepath="$PROJECT_DIR$/day35_javaweb_02/day35_javaweb_02/day35_javaweb_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/day35_javaweb_03/day35_javaweb_03.iml" filepath="$PROJECT_DIR$/day35_javaweb_03/day35_javaweb_03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day36_01_start/day36_01_start.iml" filepath="$PROJECT_DIR$/day36_01_start/day36_01_start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day36_02_start/day36_02_start.iml" filepath="$PROJECT_DIR$/day36_02_start/day36_02_start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day36_03_crud/day36_03_crud.iml" filepath="$PROJECT_DIR$/day36_03_crud/day36_03_crud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day36_04_parametertype/day36_04_parametertype.iml" filepath="$PROJECT_DIR$/day36_04_parametertype/day36_04_parametertype.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+    <select id="findTotal" resultType="long">
+        select count(*) from t_user
+    </select>
+
+    <select id="findById" parameterType="int" resultType="User">
+        select * from t_user where uid=#{id}
+    </select>
+
+    <select id="findByUsername" parameterType="string" resultType="map">
+        select * from t_user where username=#{username}
+    </select>
+
+    <!--
+        resultType属性会进行自动映射: 根据结果集的字段名和POJO的属性名的对应关系进行映射
+
+        resultMap属性: 结果集映射(手动映射),我们要先使用resultMap标签编写一个手动映射规则，然后使用这个映射规则
+    -->
+    <!--
+        id就是这个映射规则的唯一标识
+        type就是要进行手动映射的类型:UserInfo
+
+        autoMapping="true" 表示能自动映射的就会进行自动映射，不能自动映射的属性，才进行手动映射
+    -->
+    <resultMap id="userInfoMap" type="UserInfo" autoMapping="true">
+        <!--
+            id标签表示对主键进行映射
+                column属性是要进行映射的主键的字段名(列名)
+                property是要进行映射的POJO的属性名
+        -->
+        <id column="uid" property="userId"></id>
+        <!--
+            result标签就是对其它的非主键进行映射
+        -->
+        <result column="sex" property="userSex"></result>
+        <result column="birthday" property="userBirthday"></result>
+        <result column="address" property="userAddress"></result>
+    </resultMap>
+
+    <select id="findAllUserInfo" resultMap="userInfoMap">
+        select * from t_user
+    </select>
+</mapper>
