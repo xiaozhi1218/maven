@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/day35_javase_01/day35_javase_01.iml" filepath="$PROJECT_DIR$/day35_javase_01/day35_javase_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day35_javase_02/day35_javase_02.iml" filepath="$PROJECT_DIR$/day35_javase_02/day35_javase_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day35_javase_03/day35_javase_03.iml" filepath="$PROJECT_DIR$/day35_javase_03/day35_javase_03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day35_javaweb_01/day35_javaweb_01.iml" filepath="$PROJECT_DIR$/day35_javaweb_01/day35_javaweb_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day35_javaweb_02/day35_javaweb_02/day35_javaweb_02.iml" filepath="$PROJECT_DIR$/day35_javaweb_02/day35_javaweb_02/day35_javaweb_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day35_javaweb_03/day35_javaweb_03.iml" filepath="$PROJECT_DIR$/day35_javaweb_03/day35_javaweb_03.iml" />
+    </modules>
+  </component>
+</project>
