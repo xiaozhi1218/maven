@@ -20,6 +20,8 @@
         <option value="$PROJECT_DIR$/day36_02_start/pom.xml" />
         <option value="$PROJECT_DIR$/day36_03_crud/pom.xml" />
         <option value="$PROJECT_DIR$/day36_04_parametertype/pom.xml" />
+        <option value="$PROJECT_DIR$/day36_05_resulttype/pom.xml" />
+        <option value="$PROJECT_DIR$/day36_06_dynamicSql/pom.xml" />
       </list>
     </option>
   </component>

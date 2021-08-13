@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/day36_02_start/day36_02_start.iml" filepath="$PROJECT_DIR$/day36_02_start/day36_02_start.iml" />
       <module fileurl="file://$PROJECT_DIR$/day36_03_crud/day36_03_crud.iml" filepath="$PROJECT_DIR$/day36_03_crud/day36_03_crud.iml" />
       <module fileurl="file://$PROJECT_DIR$/day36_04_parametertype/day36_04_parametertype.iml" filepath="$PROJECT_DIR$/day36_04_parametertype/day36_04_parametertype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day36_05_resulttype/day36_05_resulttype.iml" filepath="$PROJECT_DIR$/day36_05_resulttype/day36_05_resulttype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day36_06_dynamicSql/day36_06_dynamicSql.iml" filepath="$PROJECT_DIR$/day36_06_dynamicSql/day36_06_dynamicSql.iml" />
     </modules>
   </component>
 </project>

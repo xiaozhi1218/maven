@@ -9,8 +9,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="day35_javase_02" />
         <module name="day35_javase_03" />
+        <module name="day36_06_dynamicSql" />
         <module name="test03" />
         <module name="day36_04_parametertype" />
+        <module name="day36_05_resulttype" />
         <module name="day36_01_start" />
         <module name="day36_03_crud" />
         <module name="day36_02_start" />
