@@ -34,12 +34,17 @@
         -->
         <id column="uid" property="userId"></id>
         <!--
-            result标签就是对其它的非主键进行映射
+            result标签就是对其它的非主键进行映射，不加autoMapping="true"最好不要省略相同属性的
         -->
+        <!--<result column="username" property="username"/>-->
         <result column="sex" property="userSex"></result>
         <result column="birthday" property="userBirthday"></result>
         <result column="address" property="userAddress"></result>
     </resultMap>
+
+    <!--<select id="findAllUserInfo" resultType="UserInfo">-->
+    <!--    select * from t_user-->
+    <!--</select>-->
 
     <select id="findAllUserInfo" resultMap="userInfoMap">
         select * from t_user
