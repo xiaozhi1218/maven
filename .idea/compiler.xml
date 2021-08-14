@@ -22,15 +22,15 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="day35_javase_02" target="1.8" />
-      <module name="day35_javase_03" target="8" />
+      <module name="day35_javase_03" target="1.8" />
       <module name="day35_javaweb_02" target="1.8" />
       <module name="day35_javaweb_03" target="1.8" />
-      <module name="day36_01_start" target="8" />
-      <module name="day36_02_start" target="8" />
-      <module name="day36_03_crud" target="8" />
-      <module name="day36_04_parametertype" target="8" />
-      <module name="day36_05_resulttype" target="8" />
-      <module name="day36_06_dynamicSql" target="8" />
+      <module name="day36_01_start" target="1.8" />
+      <module name="day36_02_start" target="1.8" />
+      <module name="day36_03_crud" target="1.8" />
+      <module name="day36_04_parametertype" target="1.8" />
+      <module name="day36_05_resulttype" target="1.8" />
+      <module name="day36_06_dynamicSql" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
