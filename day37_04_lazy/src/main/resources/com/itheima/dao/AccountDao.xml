@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.AccountDao">
+    <resultMap id="accountUserMap" type="Account" autoMapping="true">
+        <id column="uid" property="uid"/>
+        <!--
+            让mybatis调用第二步查询
+                select属性表示要调用的第二步查询的标示
+                fetchType="lazy" 表示这次调用第二步查询会延迟加载
+        -->
+        <association property="user" autoMapping="true"
+                     select="com.itheima.dao.UserDao.findUserByUid"
+                     column="uid">
+        </association>
+    </resultMap>
+
+    <select id="findAccountByAid" parameterType="int" resultMap="accountUserMap">
+        select * from t_account where aid=#{aid}
+    </select>
+</mapper>

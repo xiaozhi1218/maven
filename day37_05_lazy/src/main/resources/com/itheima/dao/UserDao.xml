@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+    <resultMap id="userAccountListMap" type="User" autoMapping="true">
+        <id column="uid" property="uid"/>
+        <collection property="accountList" autoMapping="true"
+                    select="com.itheima.dao.AccountDao.findAccountListByUid"
+                    column="uid">
+        </collection>
+    </resultMap>
+    <select id="findUserByUid" parameterType="int" resultMap="userAccountListMap">
+        select * from t_user where uid=#{uid}
+    </select>
+</mapper>

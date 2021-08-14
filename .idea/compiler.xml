@@ -10,7 +10,7 @@
         <module name="day35_javase_02" />
         <module name="day35_javase_03" />
         <module name="day36_06_dynamicSql" />
-        <module name="test03" />
+        <module name="day37_01_cache" />
         <module name="day36_04_parametertype" />
         <module name="day36_05_resulttype" />
         <module name="day36_01_start" />
@@ -31,6 +31,7 @@
       <module name="day36_04_parametertype" target="1.8" />
       <module name="day36_05_resulttype" target="1.8" />
       <module name="day36_06_dynamicSql" target="1.8" />
+      <module name="day37_01_cache" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
