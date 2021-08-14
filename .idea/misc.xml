@@ -23,6 +23,13 @@
         <option value="$PROJECT_DIR$/day36_05_resulttype/pom.xml" />
         <option value="$PROJECT_DIR$/day36_06_dynamicSql/pom.xml" />
         <option value="$PROJECT_DIR$/day37_01_cache/pom.xml" />
+        <option value="$PROJECT_DIR$/day37_02_join/pom.xml" />
+        <option value="$PROJECT_DIR$/day37_03_join/pom.xml" />
+        <option value="$PROJECT_DIR$/day37_04_lazy/pom.xml" />
+        <option value="$PROJECT_DIR$/day37_05_lazy/pom.xml" />
+        <option value="$PROJECT_DIR$/day37_06_annotation_crud/pom.xml" />
+        <option value="$PROJECT_DIR$/day37_07_annotation_lazy/pom.xml" />
+        <option value="$PROJECT_DIR$/day37_08_annotation_lazy/pom.xml" />
       </list>
     </option>
   </component>

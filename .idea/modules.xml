@@ -15,6 +15,13 @@
       <module fileurl="file://$PROJECT_DIR$/day36_05_resulttype/day36_05_resulttype.iml" filepath="$PROJECT_DIR$/day36_05_resulttype/day36_05_resulttype.iml" />
       <module fileurl="file://$PROJECT_DIR$/day36_06_dynamicSql/day36_06_dynamicSql.iml" filepath="$PROJECT_DIR$/day36_06_dynamicSql/day36_06_dynamicSql.iml" />
       <module fileurl="file://$PROJECT_DIR$/day37_01_cache/day37_01_cache.iml" filepath="$PROJECT_DIR$/day37_01_cache/day37_01_cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day37_02_join/day37_02_join.iml" filepath="$PROJECT_DIR$/day37_02_join/day37_02_join.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day37_03_join/day37_03_join.iml" filepath="$PROJECT_DIR$/day37_03_join/day37_03_join.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day37_04_lazy/day37_04_lazy.iml" filepath="$PROJECT_DIR$/day37_04_lazy/day37_04_lazy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day37_05_lazy/day37_05_lazy.iml" filepath="$PROJECT_DIR$/day37_05_lazy/day37_05_lazy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day37_06_annotation_crud/day37_06_annotation_crud.iml" filepath="$PROJECT_DIR$/day37_06_annotation_crud/day37_06_annotation_crud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day37_07_annotation_lazy/day37_07_annotation_lazy.iml" filepath="$PROJECT_DIR$/day37_07_annotation_lazy/day37_07_annotation_lazy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day37_08_annotation_lazy/day37_08_annotation_lazy.iml" filepath="$PROJECT_DIR$/day37_08_annotation_lazy/day37_08_annotation_lazy.iml" />
     </modules>
   </component>
 </project>
