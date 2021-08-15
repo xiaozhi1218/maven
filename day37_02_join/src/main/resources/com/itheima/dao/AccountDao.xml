@@ -5,12 +5,21 @@
 <mapper namespace="com.itheima.dao.AccountDao">
     
     <resultMap id="accountUserMap" type="Account" autoMapping="true">
+        <!--写了自动映射 autoMapping="true" 属性就不用写字段名和属性名相同的映射-->
+        <!--<id column="aid" property="aid"/>-->
+        <!--<result column="money" property="money"/>-->
+        <!--<result column="uid" property="uid"/>-->
         <!--
             使用association标签进行一对一映射
                 property属性: 要进行一对一映射的属性名
                 javaType属性: 要进行一对一映射的属性类型
         -->
         <association property="user" autoMapping="true" javaType="User">
+            <!--<id column="uid" property="uid"/>-->
+            <!--<result column="username" property="username"/>-->
+            <!--<result column="sex" property="sex"/>-->
+            <!--<result column="birthday" property="birthday"/>-->
+            <!--<result column="address" property="address"/>-->
         </association>
     </resultMap>
     <select id="findAccountUserByAid" parameterType="int" resultMap="accountUserMap">
