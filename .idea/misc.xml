@@ -6,6 +6,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/day35_javaweb_02/day35_javaweb_02" />
     <file type="web" url="file://$PROJECT_DIR$/day35_javaweb_03" />
+    <file type="web" url="file://$PROJECT_DIR$/day38_04_usemvc" />
     <file type="web" url="file://$PROJECT_DIR$/test02" />
     <file type="web" url="file://$PROJECT_DIR$/untitled1" />
   </component>
@@ -30,6 +31,8 @@
         <option value="$PROJECT_DIR$/day37_06_annotation_crud/pom.xml" />
         <option value="$PROJECT_DIR$/day37_07_annotation_lazy/pom.xml" />
         <option value="$PROJECT_DIR$/day37_08_annotation_lazy/pom.xml" />
+        <option value="$PROJECT_DIR$/heima_mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/day38_04_usemvc/pom.xml" />
       </list>
     </option>
   </component>

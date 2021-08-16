@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ElementUI的分页</title>
+    <script src="../vue.js"></script>
+    <script src="../index.js"></script>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <div id="app">
+        <!--
+            :current-page="currentPage4",绑定当前页数
+            :page-sizes 绑定可选的每页条数
+            :page-size 绑定真正的每页条数
+            :total 绑定总数据条数
+            layout="total, sizes, prev, pager, next, jumper" 要先是哪些布局
+            @size-change="handleSizeChange" 绑定当每页条数发生改变的时候，要调用的方法
+            @current-change="handleCurrentChange" 绑定当当前页发生改变的时候，要调用的方法
+        -->
+        <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="currentPage"
+                :page-sizes="pageSizes"
+                :page-size="pageSize"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="pagination.total">
+        </el-pagination>
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            methods:{
+                handleSizeChange(val) {
+                    console.log(`每页 ${val} 条`);
+                },
+                handleCurrentChange(val) {
+                    console.log(`当前页: ${val}`);
+                }
+            },
+            data:{
+                currentPage:1,
+                pageSizes:[100, 200, 300,],
+                pageSize:100,
+                pagination:{
+                    total:1000
+                }
+            }
+        })
+    </script>
+</body>
+</html>

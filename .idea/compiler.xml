@@ -17,12 +17,14 @@
         <module name="day37_05_lazy" />
         <module name="day36_02_start" />
         <module name="day37_02_join" />
+        <module name="heima_mvc" />
         <module name="day35_javaweb_02" />
         <module name="day35_javaweb_03" />
         <module name="day35_javase_02" />
         <module name="day35_javase_03" />
         <module name="day37_07_annotation_lazy" />
         <module name="day36_04_parametertype" />
+        <module name="day38_04_usemvc" />
         <module name="day37_06_annotation_crud" />
         <module name="day37_03_join" />
       </profile>
@@ -46,6 +48,8 @@
       <module name="day37_06_annotation_crud" target="1.8" />
       <module name="day37_07_annotation_lazy" target="1.8" />
       <module name="day37_08_annotation_lazy" target="1.8" />
+      <module name="day38_04_usemvc" target="1.8" />
+      <module name="heima_mvc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
