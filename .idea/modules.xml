@@ -23,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/day37_07_annotation_lazy/day37_07_annotation_lazy.iml" filepath="$PROJECT_DIR$/day37_07_annotation_lazy/day37_07_annotation_lazy.iml" />
       <module fileurl="file://$PROJECT_DIR$/day37_08_annotation_lazy/day37_08_annotation_lazy.iml" filepath="$PROJECT_DIR$/day37_08_annotation_lazy/day37_08_annotation_lazy.iml" />
       <module fileurl="file://$PROJECT_DIR$/day38_04_usemvc/day38_04_usemvc.iml" filepath="$PROJECT_DIR$/day38_04_usemvc/day38_04_usemvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day38_05_elementui/day38_05_elementui.iml" filepath="$PROJECT_DIR$/day38_05_elementui/day38_05_elementui.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima_mvc/heima_mvc.iml" filepath="$PROJECT_DIR$/heima_mvc/heima_mvc.iml" />
     </modules>
   </component>
