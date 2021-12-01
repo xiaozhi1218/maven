@@ -3,10 +3,8 @@
     <output-path>$PROJECT_DIR$/day35_javaweb_03/target</output-path>
     <properties id="maven-jee-properties">
       <options>
-        <exploded>false</exploded>
         <module>day35_javaweb_03</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="archive" name="day35_javaweb_03-1.0-SNAPSHOT.war">
